@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting...</title>
+
+  <!-- Meta preview for social media -->
+  <meta property="og:title" content="Urgent Aid for the Survival of the Alsaidi Family" />
+  <meta property="og:description" content="Help support a displaced family struggling to survive after losing everything." />
+  <meta property="og:image" content="https://i.ibb.co/tMbMgqVy/62d6cfabb18a4f72bf69e18939484dcd.gif" />
+  <meta property="og:url" content="https://www.gofundme.com/f/urgent-aid-for-the-survival-of-the-alsaidi-family-from-gaza" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script>
+    // الرابط المطلوب التحويل إليه
+    const redirectURL = "https://www.gofundme.com/f/urgent-aid-for-the-survival-of-the-alsaidi-family-from-gaza";
+
+    // أخذ آخر جزء من الرابط (مثلاً /1 أو /2)
+    const path = window.location.pathname.split("/").pop();
+
+    // تحويل إلى رقم
+    const num = parseInt(path, 10);
+
+    // تحقق: إذا بين 1 و 10 لكن ليس 2 → اعمل ريدايركت
+    if (!isNaN(num) && num >= 1 && num <= 10 && num !== 2) {
+      window.location.replace(redirectURL);
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
